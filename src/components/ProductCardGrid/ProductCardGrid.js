@@ -1,6 +1,8 @@
 import ProductCardGridCss from "./ProductCardGrid.css";
 
 const ProductCardGrid =({products})=>{
+   
+
     return(
     <section className="">
       <h1 className="our-product-heading">Populära Produkter</h1>

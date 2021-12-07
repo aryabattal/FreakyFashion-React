@@ -1,0 +1,377 @@
+body {
+    font-family: cursive;
+}
+/* __________ Special arrangements _____________*/
+.align-items-central {
+    align-items: center;
+}
+
+.left-on-top {
+    position: absolute;
+    align-self: flex-end;
+    opacity: 0.5;
+}
+
+.central-on-top {
+    position: absolute;
+    align-self: center;
+}
+
+.flex-direction-row {
+    display: inline-flex;
+    align-items: flex-start;
+
+}
+
+.v-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(240, 234, 230);
+    overflow: hidden;
+}
+
+.v-container div {
+    position: relative;
+    margin: 2px;
+    padding: 2px;
+    overflow: hidden;
+}
+
+/* _______________ header _______________ */
+
+.header-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 234, 230);
+    overflow: hidden;
+}
+
+.header-container div {
+    position: relative;
+    margin: 2px;
+    padding: 2px;
+    overflow: hidden;
+}
+.search-bar {
+    width: 200px;
+    height: 40px;
+    align-self: center;
+    padding-left: 20px;
+
+}
+
+.header-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-container a:hover {
+    color: lightslategray;
+}
+/* _______________ navigation  ______________ */
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-container ul {
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.nav-container li {
+    display: inline-flex;
+    margin-left: 3px;
+}
+
+.nav-container a {
+    text-decoration: none;
+    padding-inline-end: 20px;
+    color: crimson;
+}
+
+.nav-container a:hover {
+    color: lightslategray;
+}
+
+ /*_____________ hero ______________*/
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "hero-text hero-img";
+    font-size: 1.2em;
+    padding-right: -10px;
+    margin-bottom: 20px;
+}
+
+button .submit-btn {
+    width: 70px;
+    height: 40px;
+    position: sticky;
+    align-items: center;
+    justify-items: center;
+}
+
+ .hero-text{
+    margin-right: 50px;
+    margin-left: 20px;
+    padding: 10px;
+
+ }
+
+/* ______________ spots _______________ */
+.spots-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    width: 98%;
+    height: 19vw;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.spots-img {
+    width: 100%;
+    opacity: 0.9;
+}
+
+.spots-title {
+    position: absolute;
+    align-self: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(85, 3, 41);
+}
+
+.product-img:hover {
+    opacity: 0.3;
+}
+
+
+/* ______________ Product grid _______________ */
+.our-product-heading {
+    text-align: center;
+}
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+
+}
+
+.product-container > article {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.product-container img {
+    width: 100%;
+}
+
+.product-text-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 234, 230);
+    overflow: hidden;
+}
+
+/* ______________ footer _______________ */
+.footer-container > div {
+    padding: 10px;
+    margin-top: 10px;
+}
+.footer-container {
+  display: grid;
+  grid-row: 1/1;
+  background-color: lightgray;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.footer-column ul li {
+  text-decoration: black;
+  list-style:none;
+  
+}
+
+.footer-column a:hover{
+ color:lightslategray;
+}
+
+.footer-column a{
+ text-decoration: none;
+ color:black;
+
+}
+ul.column {
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+div.footer-column {
+    display:flex;
+    flex-direction:row;
+    margin: 2px;
+    padding-right: 8px;
+  justify-content: flex-start;
+ 
+
+}
+.footer-icons {
+    display: inline-flex;
+   justify-content: space-between;
+   padding-right: 30px;
+}
+.footer-icons div{
+ margin-right: 8em;
+}
+
+.language{
+    display: block;
+    width: 300px;
+    height:200px;
+    padding-top: 35px;
+    margin-left:auto;
+    align-items: flex-end;  
+}
+div.footer-select select{
+    display: flex;
+    width: 200px;
+  }
+  
+
+  .footer-container small
+ { 
+  display: flex;
+  height: 120px;
+  margin-top: 20px;
+  justify-content: center;
+  text-align:center;
+ }
+
+ /************ Responsive design ***************/
+ @media screen and (max-width: 580px) {
+
+  /*header*/
+  
+  div.logo-and-search{
+    display:grid;
+   grid-template-columns: 50%;
+   grid-template-areas: "img" "form";
+ 
+  
+  }
+  header.header-container img{
+    width: 100px;
+    height: 50px;
+
+  }
+form {
+ 
+    width: 100%;
+    height: 40px;
+    padding-top: 4px;
+    padding-left: 0px;
+
+  }
+
+
+  .icons-and-language{
+    display: none;
+  }
+  .empty-space{
+    display: none;
+  }
+
+/*navation*/
+  .nav-container ul{
+   
+    display:inline-flex;
+    flex-direction:column;
+    align-items: flex-start;
+  
+  
+
+  }
+  /*hero*/
+
+  .hero-container {
+    display:flex;
+    flex-direction:column-reverse;
+    margin-top: 9em;
+   
+}
+
+.hero-container img{
+  width: 100%;
+}
+ button {
+    width: 50px;
+    height: 40px;
+    position: sticky;
+    align-items: center;
+    justify-items: center;
+}
+
+
+    /*main*/
+    article.small-spots{
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+    align-items: center;
+    }
+   
+    .product img{
+      width: 100%;
+    }
+    .product h4 {
+      text-align: center;
+    
+    }
+ 
+    .large-spots {
+      display:none;
+    }
+
+   /*fotter*/
+
+   div.footer-column {
+      display:grid;
+      grid-template-columns:repeat(1,1fr);
+    
+    }
+    .footer-icons{
+      display: grid;
+      grid-template-columns:repeat(1,1fr) ;
+     
+    }
+    .small{
+      align-items: center;
+     
+    }
+    .language{
+      display: none;
+    }
+   
+ }

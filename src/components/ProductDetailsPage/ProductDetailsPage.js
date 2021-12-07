@@ -10,7 +10,7 @@ const ProductDetailsPage = () => {
       .then((response) => response.json())
       .then((product) => setProduct(product));
   });
-  // Use tecnic conditional rendering (program ?)
+  // Use tecnic conditional rendering (product?22)
   return product ? (
     <div>
       <h3 className="product-name">{product.name}</h3>
@@ -36,6 +36,7 @@ const ProductDetailsPage = () => {
         <div className="v-container order-instructions-container">
           <h5 className="instruction-title"></h5>
           <p className="instructions">{product.description}</p>
+          <p> {product.price} kr</p>
           <div className="v-container parameters-container">
             <div>
               <label for="cake-size">Size:</label>

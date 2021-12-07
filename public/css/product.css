@@ -1,0 +1,82 @@
+
+
+/*________________ Special arrangements________________*/
+
+.stick-central {
+    justify-content: center;
+}
+
+.align-items-to-flex-start {
+    align-items: flex-start;
+}
+
+.central-on-top {
+    position: absolute;
+    align-self: center;
+}
+
+
+.product-name {
+    text-align: center;
+    margin: 3%;
+}
+
+.product-shots-container {
+    width: 18vw;
+}
+
+.product-shots {
+    width: 100%;
+}
+
+.product-shots img {
+    width: 80%;
+}
+
+.product-shots img:hover {
+    transform: scale(1.7)
+}
+
+.main-product-shot-container {
+    width: 54.5vw;
+}
+
+.main-product-shot {
+    width: 100%;
+}
+
+.main-product-shot img {
+    width: 80%;
+}
+
+.order-instructions-container {
+    width: 50vw;
+}
+
+.order-instructions-container .instruction-title {
+    padding: 10px;
+}
+
+.order-instructions-container .instructions {
+    padding: 10px;
+    width: 23vw;
+}
+
+.parameters-container > * > * {
+    width: 30%;
+}
+
+.purchase-button-container {
+    position: relative;
+}
+
+.purchase-button {
+    width: 61%;
+    height: 4vw;
+    background-color: rgb(252, 181, 181);
+    opacity: 0.9;
+}
+
+.purchase-button:hover{
+    background-color: white;
+}
